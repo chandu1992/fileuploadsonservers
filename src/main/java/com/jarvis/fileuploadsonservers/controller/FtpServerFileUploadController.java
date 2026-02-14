@@ -10,11 +10,11 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/api/ftp")
-public class SftpServerFileUploadController {
+public class FtpServerFileUploadController {
 
     private final FtpService ftpService;
 
-    public SftpServerFileUploadController(FtpService ftpService) {
+    public FtpServerFileUploadController(FtpService ftpService) {
         this.ftpService = ftpService;
     }
 

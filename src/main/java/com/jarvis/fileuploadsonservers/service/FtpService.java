@@ -28,6 +28,8 @@ public class FtpService {
     @Value("${ftp.remote-dir}")
     private String remoteDir;
 
+
+    // FTPClient is not secured. Apache Commons Net uses plain FTP so use JSch
     public String uploadFile(MultipartFile file) throws IOException {
         FTPClient ftpClient = new FTPClient();
 
